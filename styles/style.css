@@ -1,0 +1,38 @@
+body {
+    height: 900px;
+    background-color: #FFDEDB;
+    color: #340D09;
+}
+header {
+    position: fixed;
+    background-color: #FE2712;
+    color:#340D09;
+}
+h1, h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #340D09;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #FFDEDB;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #A70F01;
+}
