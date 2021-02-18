@@ -1,38 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 body {
-    height: 900px;
-    background-color: #FFDEDB;
-    color: #340D09;
-}
-header {
-    position: fixed;
-    background-color: #FE2712;
-    color:#340D09;
-}
-h1, h2 {
-    text-align: center;
+    margin: 0;
+    background: #EBF7E3;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
 }
 
-ul {
-    list-style-type: none;
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #66B032;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #340D09;
+    list-style: none;
 }
 
-li {
-    float: left;
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    position: relative;
 }
 
-li a {
-    display: block;
-    color: #FFDEDB;
-    text-align: center;
-    padding: 14px 16px;
+nav a {
+    color: #375F1B;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #A70F01;
+nav a:hover {
+    color: #1B3409;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #1B3409;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
 }
