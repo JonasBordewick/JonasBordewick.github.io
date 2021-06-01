@@ -4,30 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jonas Bordewick</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="scripts/index.js"></script>
 </head>
 <body>
-<header>
-    <div class="container">
-        <nav>
+    <! --- HEADER --->
+    <header>
+        <div id="logo">
+            <a href="#home">
+                <img src="http://placehold.it/120x120" alt="LOGO">
+            </a>
+        </div>
+        
+        <nav id="main-nav">
             <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="https://github.com/JonasBordewick">Github</a></li>
-                <li><a href="#">Projekte</a></li>
-                <li><a href="#">Klausuren</a></li>
+                <li><a href="#home">Start</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#projekte">Meine Projekte</a></li>
             </ul>
         </nav>
-    </div>
-</header>
-    <div class="text">
-        <h1>Willkommen auf meiner Website!</h1>
+    </header>
+    
+    <! --- HOME --->
+    
+    <section id="home">
+        <hr>
+        <h1>Jonas Bordewick</h1>
+        <h2>Programmierer und Gamer</h2>
+        <a href="#about">
+            <i class="fas fa-arrow-alt-circle-down"></i>
+        </a>
+    </section>
+
+    <! --- ABOUT --->
+    
+    <section id="about">
+        <h3>Über mich</h3>
+        <hr>
+        <img src="http://placehold.it/400x400" alt="Avatar">
+        <h4>Jonas Bordewick</h4>
         <p>
-            Diese Website ist gerade in Arbeit. Nichts desto trotz könnt ihr hier bereit etwas runterladen <br>
-            <ul class="downloads">
-                <li><a href="files/CrapChat/crapchatclient-1.0-SNAPSHOT_linux.jar" download="crapchatclient-1.0-SNAPSHOT_linux.jar">CrapChat Client für Linux</a> </li>
-                 <li><a href="files/CrapChat/crapchatclient-1.0-SNAPSHOT_windows.jar" download="crapchatclient-1.0-SNAPSHOT_windows.jar">CrapChat Client für Windows</a> </li>
-             </ul>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
-    </div>
+    </section>
+    
+    <section id="projects">
+        <h3>Meine Projekte</h3>
+        <hr>
+        <div id="work">
+            <ul>
+                <li><a><img src="http://placehold.it/230x170" alt="ProjektBild"></a></li>
+                <li><a><img src="http://placehold.it/230x170" alt="ProjektBild"></a></li>
+                <li><a><img src="http://placehold.it/230x170" alt="ProjektBild"></a></li>
+                <li><a><img src="http://placehold.it/230x170" alt="ProjektBild"></a></li>
+                <li><a><img src="http://placehold.it/230x170" alt="ProjektBild"></a></li>
+                <li><a><img src="http://placehold.it/230x170" alt="ProjektBild"></a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2021 Jonas Bordewick</p>
+    </footer>
 </body>
 </html>
